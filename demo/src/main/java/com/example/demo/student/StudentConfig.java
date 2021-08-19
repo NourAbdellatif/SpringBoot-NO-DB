@@ -20,15 +20,13 @@ public class StudentConfig {
             Student Lighto = new Student(
                     "Lighto",
                     LocalDate.of(2000, APRIL,20),
-                    "noor.abdelatif@gmail.com",
-                    21
+                    "noor.abdelatif@gmail.com"
             );
 
             Student Som3a = new Student(
                     "Som3a",
                     LocalDate.of(2001, APRIL,22),
-                    "noor.abdelatif@gmail.com",
-                    21
+                    "noor.abdelatif@gmail.com"
             );
 
             repo.saveAll(

@@ -18,7 +18,7 @@ public class StudentController {
     }
 
 
-    @GetMapping
+    @GetMapping// returns list of students
     public List<Student> getStudents(){
         return studentService.getStudents();
     }
