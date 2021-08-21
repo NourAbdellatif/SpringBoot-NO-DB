@@ -4,6 +4,11 @@ import java.time.LocalDate;
 import java.time.Period;
 
 
+//To create jar:
+//mvn clean
+//mvn install
+//java -jar demo_name.jar --server.port=port
+
 @Entity
 @Table
 public class Student {
