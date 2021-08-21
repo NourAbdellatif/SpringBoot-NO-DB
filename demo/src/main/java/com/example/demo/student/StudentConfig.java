@@ -26,7 +26,7 @@ public class StudentConfig {
             Student Som3a = new Student(
                     "Som3a",
                     LocalDate.of(2001, APRIL,22),
-                    "noor.abdelatif@gmail.com"
+                    "ismail@GUC.com"
             );
 
             repo.saveAll(

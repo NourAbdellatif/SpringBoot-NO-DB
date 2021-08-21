@@ -20,9 +20,11 @@ public class StudentController {
     public List<Student> getStudents(){
         return studentService.getStudents();
     }
+
     //Used to Add new resources to the system
     @PostMapping
     public void registerNewStudent(@RequestBody Student student){
+
         studentService.addNewStudent(student);
 
     }

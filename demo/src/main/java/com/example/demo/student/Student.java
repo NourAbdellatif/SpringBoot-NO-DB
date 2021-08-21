@@ -21,7 +21,7 @@ public class Student {
     private String name;
     private LocalDate dob;
     private String email;
-    @Transient
+    @Transient // No need to be a column in the database, Will be calculated removed from constructors
     private Integer age;
 
     public Student() {
@@ -73,7 +73,7 @@ public class Student {
     }
 
     public Integer getAge() {
-        return Period.between(this.dob,LocalDate.now()).getYears();
+        return Period.between(this.dob,LocalDate.now()).getYears();//To calculate Age
     }
 
     public void setAge(Integer age) {
