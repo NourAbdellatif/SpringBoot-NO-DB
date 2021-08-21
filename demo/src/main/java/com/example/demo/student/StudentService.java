@@ -32,6 +32,14 @@ public class StudentService {
         }
         studentRepo.save(student);
         System.out.println(student);
+    }
 
+    public void deleteStudent(Long studentID) {
+        studentRepo.findById(studentID);
+        boolean exists = studentRepo.existsById(studentID);
+        if(!exists){
+            throw new IllegalStateException("Student does not exist with ID" + studentID);
+        }
+        studentRepo.deleteById(studentID);
     }
 }
